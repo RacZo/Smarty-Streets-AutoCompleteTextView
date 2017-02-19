@@ -1,6 +1,6 @@
 # Smarty Streets AutoCompleteTextView
 
-[ ![Download](https://api.bintray.com/packages/raczo/maven/smartystreetsautocomplete/images/download.svg?version=0.0.1) ](https://bintray.com/raczo/maven/smartystreetsautocomplete/0.0.1/link)
+[ ![Download](https://api.bintray.com/packages/raczo/maven/smartystreetsautocomplete/images/download.svg?version=0.0.2) ](https://bintray.com/raczo/maven/smartystreetsautocomplete/0.0.2/link)
 
 Android AutoCompleteTextView that receives and displays US address suggestions from SmartyStreets.
 
@@ -17,7 +17,7 @@ Grab via Maven:
 <dependency>
   <groupId>com.oscarsalguero</groupId>
   <artifactId>smartystreetsautocomplete</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <type>pom</type>
 </dependency>
 ```
@@ -25,7 +25,7 @@ Grab via Maven:
 or Gradle:
 
 ```groovy
-compile 'com.oscarsalguero:smartystreetsautocomplete:0.0.1'
+compile 'com.oscarsalguero:smartystreetsautocomplete:0.0.2'
 ```
 
 

@@ -5,4 +5,4 @@
     android:layout_height="wrap_content"
     android:padding="8dp"
     android:textAppearance="@style/SSACV.TextAppearance.SmartyStreetsAutoComplete"
-    tools:text="48 W 38th St, New York, NY, USA" />
+    tools:text="48 W 38th St, New York NY" />

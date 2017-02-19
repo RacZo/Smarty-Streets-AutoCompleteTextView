@@ -120,7 +120,7 @@ public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
             throw new InflateException("Did not specify referer!");
         }
 
-        final int finalSuggestions = suggestions;
+        final int finalSuggestions = layoutSuggestions;
         if (finalSuggestions == 0) {
             Log.w(LOG_TAG, "Suggestions not set, will show the default (" + SUGGESTIONS + ")");
         }
@@ -128,8 +128,8 @@ public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
         api = new SmartyStreetsApiBuilder()
                 .setApiClient(SmartyStreetsHttpClientResolver.SMARTY_STREETS_HTTP_CLIENT)
                 .setWebApiKey(finalApiKey)
-                .setReferer(layoutReferer)
-                .setSuggestions(layoutSuggestions)
+                .setReferer(finalReferer)
+                .setSuggestions(finalSuggestions)
                 .build();
 
         if (layoutAdapterClass != null) {
