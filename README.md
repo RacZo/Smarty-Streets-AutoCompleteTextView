@@ -1,6 +1,6 @@
 # Smarty Streets AutoCompleteTextView
 
-[![Bintray](https://img.shields.io/bintray/v/smartystreetsautocomplete/maven/smartystreetsautocomplete.svg)](https://bintray.com/raczo/maven/smartystreetsautocomplete/0.0.1)
+[ ![Download](https://api.bintray.com/packages/raczo/maven/smartystreetsautocomplete/images/download.svg?version=0.0.1) ](https://bintray.com/raczo/maven/smartystreetsautocomplete/0.0.1/link)
 
 Android AutoCompleteTextView that receives and displays US address suggestions from SmartyStreets.
 
