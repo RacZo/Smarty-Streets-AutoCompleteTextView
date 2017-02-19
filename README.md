@@ -9,7 +9,7 @@ Android AutoCompleteTextView that receives and displays US address suggestions f
 
 Yes, there is a demo app!
 
-Demo repository: https://github.com/RacZo/SmartyStreets-AutoComplete-Demo
+Demo app repository: https://github.com/RacZo/SmartyStreets-AutoComplete-Demo
 
 
 ## US Autocomplete API
@@ -35,9 +35,6 @@ or Gradle:
 ```groovy
 compile 'com.oscarsalguero:smartystreetsautocomplete:0.0.2'
 ```
-
-
-
 
 License
 =======
