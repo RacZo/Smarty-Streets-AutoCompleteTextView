@@ -4,6 +4,14 @@
 
 Android AutoCompleteTextView that receives and displays US address suggestions from SmartyStreets.
 
+
+## Demo
+
+Yes, there is a demo app!
+
+Demo repository: https://github.com/RacZo/SmartyStreets-AutoComplete-Demo
+
+
 ## US Autocomplete API
 
 SmartyStreets US Autocomplete API: https://smartystreets.com/docs/cloud/us-autocomplete-api.
