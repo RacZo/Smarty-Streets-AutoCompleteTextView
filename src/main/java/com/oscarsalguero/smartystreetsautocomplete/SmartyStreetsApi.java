@@ -55,7 +55,9 @@ public class SmartyStreetsApi {
     /**
      * Performs autocompletion for the given prefix
      *
-     * @prefix the textual input that will be autocompleted
+     * @param prefix the textual input that will be autocompleted
+     * @return an {@link SuggestionsResponse} object
+     * @throws IOException
      */
     public SuggestionsResponse autocomplete(String prefix) throws IOException {
 
