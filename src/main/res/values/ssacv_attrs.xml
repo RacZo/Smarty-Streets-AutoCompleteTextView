@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SmartyStreetsAutocompleteTextView">
+        <attr name="ssacv_webApiKey" format="string"/>
+        <attr name="ssacv_referer" format="string"/>
+        <attr name="ssacv_suggestions" format="integer"/>
+        <attr name="ssacv_adapterClass" format="string"/>
+        <attr name="ssacv_historyFile" format="string"/>
+    </declare-styleable>
+
+    <attr name="ssacv_addressAutoCompleteTextViewStyle" format="reference"/>
+</resources>
