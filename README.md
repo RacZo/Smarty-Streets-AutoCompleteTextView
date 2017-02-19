@@ -2,7 +2,7 @@
 
 [ ![Download](https://api.bintray.com/packages/raczo/maven/smartystreetsautocomplete/images/download.svg?version=0.0.2) ](https://bintray.com/raczo/maven/smartystreetsautocomplete/0.0.2/link)
 
-Android AutoCompleteTextView that receives and displays US address suggestions from SmartyStreets.
+Gradle library. Android AutoCompleteTextView that receives and displays US address suggestions from SmartyStreets.
 
 
 ## Demo
@@ -35,6 +35,11 @@ or Gradle:
 ```groovy
 compile 'com.oscarsalguero:smartystreetsautocomplete:0.0.2'
 ```
+
+
+### Based On
+
+SeatGeek's autocomplete library for Google Places https://github.com/seatgeek/android-PlacesAutocompleteTextView.
 
 License
 =======
