@@ -9,6 +9,8 @@ Gradle library. Android AutoCompleteTextView that receives and displays US addre
 
 Yes, there is a demo app!
 
+<img src="https://github.com/RacZo/SmartyStreets-AutoComplete-Demo/blob/master/media/demo.gif" width=300>
+
 Demo app repository: https://github.com/RacZo/SmartyStreets-AutoComplete-Demo
 
 
