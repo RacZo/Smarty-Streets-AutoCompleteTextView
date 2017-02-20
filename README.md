@@ -16,6 +16,23 @@ Yes, there is a demo app!
 Demo app repository: https://github.com/RacZo/SmartyStreets-AutoComplete-Demo
 
 
+## Dependencies
+
+If your app is already using the following SUPER AWESOME libraries:
+
+1. Google's Gson version 2.8.0 https://github.com/google/gson
+2. Square's okhttp version 3.6.0 https://github.com/square/okhttp
+3. Square's okhttp-logging-interceptor version 3.6.0 https://github.com/square/okhttp/tree/master/okhttp-logging-interceptor
+
+you are set! If not, add the following to your app's build.gradle:
+
+```groovy
+compile 'com.google.code.gson:gson:2.8.'
+compile 'com.squareup.okhttp3:okhttp:3.6.0'
+compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+```
+
+
 ## Installation
 
 Via Gradle, by putting the following in your build.gradle:
