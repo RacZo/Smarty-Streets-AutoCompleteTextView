@@ -38,7 +38,7 @@ compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
 Via Gradle, by putting the following in your build.gradle:
 
 ```groovy
-compile 'com.oscarsalguero:smartystreetsautocomplete:0.0.2'
+compile 'com.oscarsalguero:smartystreetsautocomplete:0.0.3'
 ```
 
 Or Maven:
@@ -47,7 +47,7 @@ Or Maven:
 <dependency>
   <groupId>com.oscarsalguero</groupId>
   <artifactId>smartystreetsautocomplete</artifactId>
-  <version>0.0.2</version>
+  <version>0.0.3</version>
   <type>pom</type>
 </dependency>
 ```
