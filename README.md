@@ -4,6 +4,8 @@
 
 Gradle library. Android AutoCompleteTextView that receives and displays US address suggestions from SmartyStreets's [US Autocomplete API](https://smartystreets.com/docs/cloud/us-autocomplete-api "US Autocomplete API").
 
+[SmartyStreet's Android SDK](https://smartystreets.com/docs/sdk/android "SmartyStreet's Android SDK") does not offer address suggestions, it only offers address verification and zip code lookup.
+
 
 ## Demo
 
@@ -72,7 +74,7 @@ And... voilà!
 
 ### Contributing
 
-1. Fork this repo and clone your fork
+1. Fork this repo and clone your fork. Create an empty file called "bintray.gradle" in the root of your project.
 2. Make your desired changes
 3. Add tests for your new feature and ensure all tests are passing
 4. Commit and push
