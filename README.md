@@ -2,7 +2,7 @@
 
 [ ![Download](https://api.bintray.com/packages/raczo/maven/smartystreetsautocomplete/images/download.svg?version=0.0.2) ](https://bintray.com/raczo/maven/smartystreetsautocomplete/0.0.2/link)
 
-Gradle library. Android AutoCompleteTextView that receives and displays US address suggestions from SmartyStreets's [US Autocomplete API][https://smartystreets.com/docs/cloud/us-autocomplete-api].
+Gradle library. Android AutoCompleteTextView that receives and displays US address suggestions from SmartyStreets's [US Autocomplete API](ttps://smartystreets.com/docs/cloud/us-autocomplete-api).
 
 
 ## Demo
@@ -42,9 +42,8 @@ Or Maven:
 3. Create an adapter class called "AddressAutocompleteAdapter" and make it extend "AbstractAddressAutocompleteAdapter", implement the required methods and define a layout for the dropdown item (R.layout.dropdown_text_item).
 
 4. You will need your API key and a "referer" (host you entered when you created your key). The referer in your app must have "https://" as prefix or the API won't work.
-
-```xml
-<com.oscarsalguero.smartystreetsautocomplete.SmartyStreetsAutocompleteTextView
+    ```xml
+    <com.oscarsalguero.smartystreetsautocomplete.SmartyStreetsAutocompleteTextView
         android:id="@+id/autocomplete_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,18 +55,17 @@ Or Maven:
         app:ssacv_referer="YOUR_REFERER"
         app:ssacv_suggestions="5"
         app:ssacv_webApiKey="YOUR_WEBSITE_KEY" />
-```
+    ```
 
 5. To capture the address selection (when the user taps a suggestion) you'll use the provided listener:
 
-```java
-autoCompleteTextView.setOnAddressSelectedListener(new OnAddressSelectedListener() {
-    @Override
-    public void onAddressSelected(@NonNull Address address) {
-     }
-});
-
-```
+    ```java
+    autoCompleteTextView.setOnAddressSelectedListener(new OnAddressSelectedListener() {
+       @Override
+       public void onAddressSelected(@NonNull Address address) {
+       }
+    });
+    ```
 
 And... voilà!
 

@@ -5,10 +5,10 @@ buildscript {
 
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     }
 }
-
-apply plugin: 'com.android.library'
 
 repositories {
     jcenter()
@@ -36,7 +36,29 @@ android {
         }
     }
 }
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'smartystreetsautocomplete'
 
+    publishedGroupId = 'com.oscarsalguero'
+    libraryName = 'smartystreetsautocomplete'
+    artifact = 'smartystreetsautocomplete'
+
+    libraryDescription = 'Android AutocompleteTextView that receives and displays address suggestions from Smarty Streets.'
+
+    siteUrl = 'https://github.com/RacZo/Smarty-Streets-AutoCompleteTextView'
+    gitUrl = 'https://github.com/RacZo/Smarty-Streets-AutoCompleteTextView.git'
+
+    libraryVersion = '0.0.2'
+
+    developerId = 'raczo'
+    developerName = 'Oscar Salguero'
+    developerEmail = 'info@oscarsalguero.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 dependencies {
     compile 'com.android.support:appcompat-v7:25.1.1'
     provided 'com.google.code.gson:gson:2.8.0'
@@ -48,3 +70,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     testCompile 'org.mockito:mockito-core:1.10.19'
 }
+
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
