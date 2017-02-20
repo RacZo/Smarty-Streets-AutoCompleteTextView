@@ -44,7 +44,6 @@ build/
 api/build/
 android/build/
 .gradle
-build.gradle
 
 # Keystore files
 *.jks
@@ -53,3 +52,6 @@ build.gradle
 android/config/mapping.txt
 android/config/seeds.txt
 android/config/unused.txt
+
+#Bintray gradle settings
+bintray.gradle
