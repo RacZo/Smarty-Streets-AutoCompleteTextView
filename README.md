@@ -1,6 +1,6 @@
 # Smarty Streets AutoCompleteTextView
 
-[ ![Download](https://api.bintray.com/packages/raczo/maven/smartystreetsautocomplete/images/download.svg?version=0.0.2) ](https://bintray.com/raczo/maven/smartystreetsautocomplete/0.0.2/link)
+[ ![Download](https://api.bintray.com/packages/raczo/maven/smartystreetsautocomplete/images/download.svg?version=0.0.3) ](https://bintray.com/raczo/maven/smartystreetsautocomplete/0.0.3/link)
 
 Gradle library. Android AutoCompleteTextView that receives and displays US address suggestions from SmartyStreets's [US Autocomplete API](https://smartystreets.com/docs/cloud/us-autocomplete-api "US Autocomplete API").
 
