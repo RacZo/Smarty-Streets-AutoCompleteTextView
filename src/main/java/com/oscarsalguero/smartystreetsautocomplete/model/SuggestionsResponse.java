@@ -9,7 +9,6 @@ import java.util.List;
  * Smarty Streets autocomplete response
  * Created by oscar on 2/14/17.
  */
-
 public class SuggestionsResponse implements Serializable {
 
     @SerializedName("suggestions")

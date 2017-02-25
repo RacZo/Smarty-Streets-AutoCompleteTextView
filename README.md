@@ -1,6 +1,6 @@
 # Smarty Streets AutoCompleteTextView
 
-[ ![Download](https://api.bintray.com/packages/raczo/maven/smartystreetsautocomplete/images/download.svg?version=0.0.3) ](https://bintray.com/raczo/maven/smartystreetsautocomplete/0.0.3/link)
+[ ![Download](https://api.bintray.com/packages/raczo/maven/smartystreetsautocomplete/images/download.svg?version=1.0.0) ](https://bintray.com/raczo/maven/smartystreetsautocomplete/1.0.0/link)
 
 Gradle library. Android AutoCompleteTextView that receives and displays US address suggestions from SmartyStreets's [US Autocomplete API](https://smartystreets.com/docs/cloud/us-autocomplete-api "US Autocomplete API").
 
@@ -38,7 +38,7 @@ compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
 Via Gradle, by putting the following in your build.gradle:
 
 ```groovy
-compile 'com.oscarsalguero:smartystreetsautocomplete:0.0.3'
+compile 'com.oscarsalguero:smartystreetsautocomplete:1.0.0'
 ```
 
 Or Maven:
@@ -47,7 +47,7 @@ Or Maven:
 <dependency>
   <groupId>com.oscarsalguero</groupId>
   <artifactId>smartystreetsautocomplete</artifactId>
-  <version>0.0.3</version>
+  <version>1.0.0</version>
   <type>pom</type>
 </dependency>
 ```

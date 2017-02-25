@@ -45,6 +45,14 @@ public class SmartyStreetsApi {
 
     private String mParamSuggestionsValue;
 
+    /**
+     * Constructor
+     *
+     * @param httpClient  the http client
+     * @param webApiKey   a {@link String} with your website key (API key)
+     * @param referer     a {@link String} with the referer (host) you configured for the website key
+     * @param suggestions an integer with the number of suggestions you want to get
+     */
     public SmartyStreetsApi(@NonNull final SmartyStreetsHttpClient httpClient, @NonNull final String webApiKey, @NonNull final String referer, int suggestions) {
         this.mHttpClient = httpClient;
         this.mWebApiKey = webApiKey;

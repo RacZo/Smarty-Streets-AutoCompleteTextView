@@ -21,11 +21,21 @@ public class SmartyStreetsApiBuilder {
 
     private int mSuggestions;
 
+    /**
+     *
+     * @param apiClient
+     * @return
+     */
     public SmartyStreetsApiBuilder setApiClient(@NonNull final SmartyStreetsHttpClient apiClient) {
         this.mApiClient = apiClient;
         return this;
     }
 
+    /**
+     *
+     * @param webApiKey
+     * @return
+     */
     public SmartyStreetsApiBuilder setWebApiKey(@NonNull final String webApiKey) {
         if (TextUtils.isEmpty(webApiKey)) {
             throw new IllegalArgumentException("web key cannot be null or empty!");
@@ -34,14 +44,24 @@ public class SmartyStreetsApiBuilder {
         return this;
     }
 
-    public SmartyStreetsApiBuilder setReferer(@NonNull final String referal) {
-        if (TextUtils.isEmpty(referal)) {
+    /**
+     *
+     * @param referer
+     * @return
+     */
+    public SmartyStreetsApiBuilder setReferer(@NonNull final String referer) {
+        if (TextUtils.isEmpty(referer)) {
             throw new IllegalArgumentException("referer cannot be null or empty!");
         }
-        this.mReferer = referal;
+        this.mReferer = referer;
         return this;
     }
 
+    /**
+     *
+     * @param suggestions
+     * @return
+     */
     public SmartyStreetsApiBuilder setSuggestions(final int suggestions) {
         this.mSuggestions = suggestions;
         return this;
@@ -58,7 +78,7 @@ public class SmartyStreetsApiBuilder {
         }
 
         if (mReferer == null) {
-            throw new IllegalArgumentException("referal cannot be null when building " + SmartyStreetsApi.class.getSimpleName());
+            throw new IllegalArgumentException("referer cannot be null when building " + SmartyStreetsApi.class.getSimpleName());
         }
 
         return new SmartyStreetsApi(mApiClient, mWebApiKey, mReferer, mSuggestions);

@@ -24,7 +24,6 @@ import java.util.List;
  * Smarty Streets address filter
  * Created by oscar on 2/17/17.
  */
-
 public class SmartyStreetsFilter extends Filter {
 
     private static final String LOG_TAG = SmartyStreetsFilter.class.getName();
@@ -39,7 +38,7 @@ public class SmartyStreetsFilter extends Filter {
     private final ArrayAdapterDelegate<Address> mAdapterDelegate;
 
     public SmartyStreetsFilter(@NonNull final SmartyStreetsApi api, @Nullable final AutocompleteHistoryManager historyManager,
-                               @NonNull final ArrayAdapterDelegate<Address> adapterDelegate){
+                               @NonNull final ArrayAdapterDelegate<Address> adapterDelegate) {
         this.mApi = api;
         this.mHistoryManager = historyManager;
         this.mAdapterDelegate = adapterDelegate;
@@ -90,7 +89,7 @@ public class SmartyStreetsFilter extends Filter {
                         // remove the item if it was already returned from the api
                         ((List<Address>) filterResults.values).remove(pastSelection);
                         // insert into top
-                        ((List<Address>)filterResults.values).add(0, pastSelection);
+                        ((List<Address>) filterResults.values).add(0, pastSelection);
                     }
                 }
             }

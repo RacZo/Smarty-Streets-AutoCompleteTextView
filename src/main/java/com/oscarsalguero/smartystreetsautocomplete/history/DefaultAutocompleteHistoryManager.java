@@ -22,6 +22,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Default history manager
+ */
 public class DefaultAutocompleteHistoryManager implements AutocompleteHistoryManager {
 
     private static final String LOG_TAG = DefaultAutocompleteHistoryManager.class.getName();

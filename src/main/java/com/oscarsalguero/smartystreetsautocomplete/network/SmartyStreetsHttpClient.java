@@ -13,6 +13,6 @@ import java.io.IOException;
 
 public interface SmartyStreetsHttpClient {
 
-    SuggestionsResponse executeAutocompleteRequest(Uri uri, String referal, int suggestions) throws IOException;
+    SuggestionsResponse executeAutocompleteRequest(Uri uri, String referer, int suggestions) throws IOException;
 
 }

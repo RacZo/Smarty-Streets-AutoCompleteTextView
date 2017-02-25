@@ -17,6 +17,10 @@ import okhttp3.logging.HttpLoggingInterceptor;
 class OkHttpSmartyStreetsHttpClient extends AbstractSmartyStreetsHttpClient {
     private final OkHttpClient okHttpClient;
 
+    private static final String PARAM_HOST = "Host";
+    private static final String PARAM_HOST_VALUE = "us-autocomplete.api.smartystreets.com";
+    private static final String PARAM_REFERER = "Referer";
+
     OkHttpSmartyStreetsHttpClient(SmartyStreetsApiJsonParser parser) {
         super(parser);
 
@@ -38,8 +42,8 @@ class OkHttpSmartyStreetsHttpClient extends AbstractSmartyStreetsHttpClient {
     protected <T extends SuggestionsResponse> T executeNetworkRequest(final Uri uri, final String referer, final int suggestions, final ResponseHandler<T> responseHandler) throws IOException {
         final Request request = new Request.Builder()
                 .url(uri.toString())
-                .addHeader("Host", "us-autocomplete.api.smartystreets.com")
-                .addHeader("Referer", referer)
+                .addHeader(PARAM_HOST, PARAM_HOST_VALUE)
+                .addHeader(PARAM_REFERER, referer)
                 .build();
 
         Response response = okHttpClient.newCall(request).execute();

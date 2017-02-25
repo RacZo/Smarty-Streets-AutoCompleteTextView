@@ -15,7 +15,6 @@ import com.oscarsalguero.smartystreetsautocomplete.model.Address;
  * Adapter for smarty streets address autocomplete
  * Created by oscar on 2/17/17.
  */
-
 public class DefaultAutocompleteAdapter extends AbstractAddressAutocompleteAdapter {
 
     public DefaultAutocompleteAdapter(final Context context, final SmartyStreetsApi api, final AutocompleteHistoryManager historyManager) {

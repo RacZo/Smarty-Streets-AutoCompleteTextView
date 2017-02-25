@@ -8,7 +8,6 @@ import java.io.Serializable;
  * Smarty Streets Address
  * Created by oscar on 2/14/17.
  */
-
 public class Address implements Serializable {
 
     private String text;

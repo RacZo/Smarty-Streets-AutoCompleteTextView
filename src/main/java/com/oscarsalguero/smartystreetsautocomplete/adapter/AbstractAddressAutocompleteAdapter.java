@@ -21,7 +21,6 @@ import java.util.Collection;
  * to provide a different row view for the address.
  * Created by oscar on 2/14/17.
  */
-
 public abstract class AbstractAddressAutocompleteAdapter extends ArrayAdapter<Address> {
 
     @NonNull

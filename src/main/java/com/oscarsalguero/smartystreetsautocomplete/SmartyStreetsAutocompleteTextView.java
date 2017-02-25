@@ -48,6 +48,11 @@ public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
 
     /**
      * Creates a new SmartyStreetsAutocompleteTextView with the provided API key, referer and the default history file
+     *
+     * @param context
+     * @param webApiKey
+     * @param referer
+     * @param suggestions
      */
     public SmartyStreetsAutocompleteTextView(@NonNull final Context context, @NonNull final String webApiKey, @NonNull final String referer, int suggestions) {
         super(context);
@@ -57,6 +62,11 @@ public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
 
     /**
      * Creates a new SmartyStreetsAutocompleteTextView with the provided API key, referer and the provided history file
+     *
+     * @param context
+     * @param webApiKey
+     * @param referer
+     * @param historyFileName
      */
     public SmartyStreetsAutocompleteTextView(@NonNull final Context context, @NonNull final String webApiKey, @NonNull final String referer, @NonNull final String historyFileName) {
         super(context);
@@ -66,6 +76,9 @@ public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
 
     /**
      * Constructor for layout inflation
+     *
+     * @param context
+     * @param attrs
      */
     public SmartyStreetsAutocompleteTextView(final Context context, final AttributeSet attrs) {
         super(context, attrs);
@@ -75,6 +88,10 @@ public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
 
     /**
      * Constructor for layout inflation
+     *
+     * @param context
+     * @param attrs
+     * @param defAttr
      */
     public SmartyStreetsAutocompleteTextView(final Context context, final AttributeSet attrs, final int defAttr) {
         super(context, attrs, defAttr);
@@ -84,6 +101,11 @@ public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
 
     /**
      * Constructor for layout inflation
+     *
+     * @param context
+     * @param attrs
+     * @param defStyleAttr
+     * @param defStyleRes
      */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public SmartyStreetsAutocompleteTextView(final Context context, final AttributeSet attrs, final int defStyleAttr, final int defStyleRes) {
@@ -92,7 +114,19 @@ public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
         init(context, attrs, defStyleAttr, defStyleRes, null, null, 0, context.getString(R.string.ssacv_default_history_file_name));
     }
 
-    // perform basic initialization of the view by fetching layout attributes and creating the api, etc.
+
+    /**
+     * Perform basic initialization of the view by fetching layout attributes and creating the api, etc.
+     *
+     * @param context
+     * @param attrs
+     * @param defAttr
+     * @param defStyle
+     * @param webApiKey
+     * @param referer
+     * @param suggestions
+     * @param historyFileName
+     */
     private void init(@NonNull final Context context, final AttributeSet attrs, final int defAttr, final int defStyle, final String webApiKey, final String referer, final int suggestions, final String historyFileName) {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.SmartyStreetsAutocompleteTextView, defAttr, defStyle);
         String layoutApiKey = typedArray.getString(R.styleable.SmartyStreetsAutocompleteTextView_ssacv_webApiKey);
@@ -208,7 +242,13 @@ public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
         super.setAdapter(adapter);
     }
 
-    // fun way to set adapters as layout attributes
+    /**
+     * Fun way to set adapters as layout attributes
+     *
+     * @param context
+     * @param adapterClass
+     * @return
+     */
     private AbstractAddressAutocompleteAdapter adapterForClass(final Context context, final String adapterClass) {
         Class<AbstractAddressAutocompleteAdapter> adapterClazz;
         try {

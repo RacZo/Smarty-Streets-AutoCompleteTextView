@@ -6,6 +6,9 @@ import com.oscarsalguero.smartystreetsautocomplete.model.Address;
 
 import java.util.List;
 
+/**
+ * History update listener
+ */
 public interface OnHistoryUpdatedListener {
-    public void onHistoryUpdated(@NonNull List<Address> updatedHistory);
+    void onHistoryUpdated(@NonNull List<Address> updatedHistory);
 }
