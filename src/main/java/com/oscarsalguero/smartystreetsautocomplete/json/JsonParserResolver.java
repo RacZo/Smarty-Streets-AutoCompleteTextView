@@ -18,4 +18,5 @@ public final class JsonParserResolver {
     private JsonParserResolver() {
         throw new RuntimeException("No instances");
     }
+
 }
