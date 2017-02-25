@@ -323,7 +323,7 @@ public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
 
     /**
      * @return the {@link SmartyStreetsApi} that the Autocomplete view is using to fetch results from the
-     * Google Maps Places API. You can use this to make custom requests to the API, if you so choose.
+     * SmartyStreets US autocomplete API. You can use this to make custom requests to the API, if you so choose.
      */
     @NonNull
     public SmartyStreetsApi getApi() {
@@ -332,7 +332,7 @@ public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
 
     /**
      * A setter for the {@link SmartyStreetsApi} that the Autocomplete view will use to fetch results from the
-     * Google Maps Places API. You can provide your own customizations build creating your own API.
+     * SmartyStreets US autocomplete API. You can provide your own customizations build creating your own API.
      *
      * @param api the API to use for autocompletion and address details requests
      */
