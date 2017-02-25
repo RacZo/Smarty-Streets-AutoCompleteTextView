@@ -7,7 +7,9 @@ import android.text.TextUtils;
 import com.oscarsalguero.smartystreetsautocomplete.network.SmartyStreetsHttpClient;
 import com.oscarsalguero.smartystreetsautocomplete.network.SmartyStreetsHttpClientResolver;
 
-
+/**
+ * Builder class used to set up an instance of {@link SmartyStreetsApi}
+ */
 public class SmartyStreetsApiBuilder {
 
     @Nullable
@@ -22,6 +24,7 @@ public class SmartyStreetsApiBuilder {
     private int mSuggestions;
 
     /**
+     * Basic API client constructor
      *
      * @param apiClient
      * @return
@@ -32,6 +35,7 @@ public class SmartyStreetsApiBuilder {
     }
 
     /**
+     * Adds the website key (API key)
      *
      * @param webApiKey
      * @return
@@ -45,6 +49,7 @@ public class SmartyStreetsApiBuilder {
     }
 
     /**
+     * Adds the referer
      *
      * @param referer
      * @return
@@ -58,8 +63,9 @@ public class SmartyStreetsApiBuilder {
     }
 
     /**
+     * Sets how many suggestions you want to get from the Cloud API
      *
-     * @param suggestions
+     * @param suggestions an integer with the number of suggestions you want to get
      * @return
      */
     public SmartyStreetsApiBuilder setSuggestions(final int suggestions) {

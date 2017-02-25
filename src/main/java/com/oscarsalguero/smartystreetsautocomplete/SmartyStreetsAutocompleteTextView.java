@@ -26,6 +26,9 @@ import com.oscarsalguero.smartystreetsautocomplete.network.SmartyStreetsHttpClie
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
+/**
+ * Customized {@link AutoCompleteTextView}
+ */
 public class SmartyStreetsAutocompleteTextView extends AutoCompleteTextView {
 
     private static final String LOG_TAG = SmartyStreetsAutocompleteTextView.class.getName();
